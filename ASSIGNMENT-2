@@ -41,3 +41,9 @@ SELECT MAX(SellPrice) AS max_price, MIN(SellPrice) AS min_price FROM PRODUCT_MAS
 
 Q13
 SELECT COUNT(SellPrice) FROM PRODUCT_MASTER WHERE SellPrice >= 1500;
+
+Q14
+SELECT * FROM PRODUCT_MASTER WHERE QtyInHand < ReorderLvl;
+
+Q15
+SELECT OrderNo, OrderDate, ClientNo FROM SALES_ORDER;
