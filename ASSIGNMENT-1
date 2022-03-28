@@ -34,7 +34,7 @@ INSERT INTO DEPT VALUES (40, 'Research', 'Dallas');
 INSERT INTO DEPT VALUES (40, 'Sales', 'Chicago');
 INSERT INTO DEPT VALUES (40, 'Operations', 'Boston');
 
-INSERT INTO EMP VALUES (7369, 'Smith', 'Clerk', 7902, '17-DEC-80', 800, 0, 20);
+INSERT INTO EMP VALUES (7369, 'Smith', 'Clerk', 7902, '17-DEC-80', 800, NULL, 20);
 INSERT INTO EMP VALUES (7499, 'Allen', 'Salesman', 7698, '20-FEB-81', 1600, NULL, 30);
 INSERT INTO EMP VALUES (7521, 'Ward', 'Salesman', 7698, '22-FEB-81', 1250, 300, 30);
 INSERT INTO EMP VALUES (7566, 'Jones', 'Manager', 7839, '2-APR-81', 2975, 500, 20);
