@@ -8,7 +8,7 @@ INSERT INTO ACCOUNTS VALUES(1004, 35500.00);
 INSERT INTO ACCOUNTS VALUES(1005, 348.00);
 INSERT INTO ACCOUNTS VALUES(1006, 15500.00);
 -------------------------------------------------------------------------
-CODE:
+PL/SQL CODE:
 declare
 acct_balance number(8,2);
 acct_no varchar2(4);
