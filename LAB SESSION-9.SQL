@@ -1,3 +1,11 @@
+At first: 
+run the command 'set serveroutput on'
+To write the code:
+ed 'filename'
+(write the code in notepad and save the file in .sql format then close the file)
+To run the code:
+@'filename'
+
 1.
 ------------------------------------------------------------------------
 CREATE TABLE ACCOUNTS(ACCOUNT_ID NUMBER(4) PRIMARY KEY, BAL NUMBER(8,2));
