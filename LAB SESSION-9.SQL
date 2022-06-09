@@ -32,7 +32,7 @@ PL/SQL CODE:
 -----------
 declare
 acct_balance number(8,2);
-acct_no varchar2(4);
+acct_no number(4);
 min_balance constant number(5,2);
 begin
 acct_no := &acct_no;
