@@ -8,7 +8,7 @@ To run the code:
 
 1.
 ------------------------------------------------------------------------
-CREATE TABLE ACCOUNTS(ACCOUNT_ID NUMBER(4) PRIMARY KEY, BAL NUMBER(8,2));
+CREATE TABLE ACCOUNTS(ACCOUNT_ID NUMBER(4) PRIMARY KEY, BALANCE NUMBER(8,2));
 INSERT INTO ACCOUNTS VALUES(1001, 70000.00);
 INSERT INTO ACCOUNTS VALUES(1002, 50000.00);
 INSERT INTO ACCOUNTS VALUES(1003, 250.00);
@@ -33,14 +33,14 @@ PL/SQL CODE:
 declare
 acct_balance number(8,2);
 acct_no varchar2(4);
-min_bal constant number(5,2);
+min_balance constant number(5,2);
 begin
 acct_no := &acct_no;
-min_bal := &min_bal;
-Select bal into acct_balance from accounts where account_id = acct_no;
-if acct_balance <= min_bal then
+min_balance := &min_balance;
+Select balance into acct_balance from accounts where account_id = acct_no;
+if acct_balance <= min_balance then
 acct_balance := acct_balance - 100; 
-update accounts set bal = bal - 100 where account_id = acct_no;
+update accounts set balance = balance - 100 where account_id = acct_no;
 dbms_output.put_line('Account balance now: ' || acct_balance);
 end if;
 end;
