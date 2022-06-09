@@ -37,7 +37,7 @@ min_balance number(5,2);
 begin
 acct_no := &acct_no;
 min_balance := &min_balance;
-Select balance into acct_balance from accounts where account_id = acct_no;
+select balance into acct_balance from accounts where account_id = acct_no;
 if acct_balance <= min_balance then
 acct_balance := acct_balance - 100; 
 update accounts set balance = balance - 100 where account_id = acct_no;
