@@ -25,7 +25,7 @@ SELECT * FROM PRODUCT_MASTER WHERE (SellPrice > 2000 AND SellPrice <= 5000);
 Q8
 SELECT * FROM PRODUCT_MASTER WHERE SellPrice > 1500;
 
-SELECT SellPrice * 0.15 AS new_price FROM PRODUCT_MASTER;
+SELECT SellPrice * 0.15 AS "new_price" FROM PRODUCT_MASTER;
 
 Q9
 SELECT Name, City, State FROM CLIENT_MASTER WHERE State <> 'Maharashtra';
@@ -34,10 +34,10 @@ Q10
 SELECT COUNT(OrderNo) FROM SALES_ORDER;
 
 Q11
-SELECT AVG(SellPrice) AS average_price FROM PRODUCT_MASTER;  
+SELECT AVG(SellPrice) AS "average_price" FROM PRODUCT_MASTER;  
 
 Q12
-SELECT MAX(SellPrice) AS max_price, MIN(SellPrice) AS min_price FROM PRODUCT_MASTER;
+SELECT MAX(SellPrice) AS "max_price", MIN(SellPrice) AS "min_price" FROM PRODUCT_MASTER;
 
 Q13
 SELECT COUNT(SellPrice) FROM PRODUCT_MASTER WHERE SellPrice >= 1500;
