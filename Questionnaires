@@ -84,3 +84,21 @@ is returned only once.
 
 Lab session-5
 -------------
+1. What is the difference between conditional and natural join?
+ans:
+Conditoinal join has explicit join condition, where as natural join's conditions are formed by matching all pairs of columns in the table with same name and datatype.
+
+2. What is the difference between inner and outer join?
+ans:
+Inner join leads to intersection of two tables whereas outer join leads to union of two tables.
+
+3. Explain the different types of outer joins.
+ans:
+Left Outer Join: Returns only unmatched rows from the left table, combined with the matching rows from the right table.
+Right Outer Join: Returns only unmatched rows from the right table, combined with the matching rows from the left table.
+Full Outer Join: Returns only unmatched rows from both the table along with the matching rows.
+
+4. Explain why a self-join mandatorily needs table name aliasing?
+ans:
+Since self join involves the same table being used twice, in order to segregate the reference to each instance of the same table, we need aliasing.
+
