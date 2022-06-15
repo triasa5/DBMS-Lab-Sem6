@@ -1,0 +1,53 @@
+Lab session-1
+-------------
+1. How will you insert multiple rows in a table without typing the query in each time?
+ans: 
+INSERT ALL
+INTO <TABLE NAME> [<COLUMN_LIST>] VALUES (<VALUE>, <VALUE>, <VALUE>,...)
+INTO <TABLE NAME> [<COLUMN_LIST>] VALUES (<VALUE>, <VALUE>, <VALUE>,...)
+INTO <TABLE NAME> [<COLUMN_LIST>] VALUES (<VALUE>, <VALUE>, <VALUE>,...)
+....
+INTO <TABLE NAME> [<COLUMN_LIST>] VALUES (<VALUE>, <VALUE>, <VALUE>,...)
+SELECT * FROM DUAL;
+
+2. What are the DDL commands that you have used in this assignment? Write the syntaxes of the DDL commands.
+ans:
+DDL commands: CREATE, ALTER, DROP
+
+Syntax for CREATE:
+CREATE TABLE <TABLE NAME> (
+<COLUMN_NAME> <DATATYPE> [<SIZE>] [<CONSTRAINT>],
+<COLUMN_NAME> <DATATYPE> [<SIZE>] [<CONSTRAINT>],
+.....
+<COLUMN_NAME> <DATATYPE> [<SIZE>] [<CONSTRAINT>];
+
+Syntax for ALTER:
+ALTER TABLE <TABLE_NAME> ADD <COLUMN_NAME> <DATATYPE> [<SIZE>] [<CONSTRAINT>];
+ALTER TABLE <TABLE_NAME> MODIFY <COLUMN_NAME> <DATATYPE> [<SIZE>] [<CONSTRAINT>];
+ALTER TABLE <TABLE_NAME> DROP COLUMN <COLUMN_NAME>;
+
+Syntax for DROP:
+DROP TABLE <TABLE_NAME>;
+
+Lab session-2
+-------------
+1. What is primary key? What is the requirement of a primary key? What should be the properties of primary key?
+ans:
+Primary Key: A primary key is a key or a set of keys that uniquely identifies a record or a row in a table.
+Requirements:
+- It must be unique
+- It must not be null
+Properties:
+- It should not change over a period of time
+- It should be a mix of alphanumeric characters
+
+2. What do you mean by referential integrity? How can you achieve this?
+ans: 
+Referential Integerity:  In the context of relational databases, it requires that if a value of 
+one attribute of a relation references a value of another attribute, then the referenced value 
+must exist. This is known as referential Integrity.
+
+Refenrential Integrity is achieved by working with primary key and foreign key.
+
+Lab session-3
+-------------
