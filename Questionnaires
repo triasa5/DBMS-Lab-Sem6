@@ -43,11 +43,44 @@ Properties:
 
 2. What do you mean by referential integrity? How can you achieve this?
 ans: 
-Referential Integerity:  In the context of relational databases, it requires that if a value of 
-one attribute of a relation references a value of another attribute, then the referenced value 
-must exist. This is known as referential Integrity.
+Referential Integerity:  In the context of relational databases, it requires that if a value of one attribute of a relation references a value of another attribute, 
+then the referenced value must exist. This is known as referential Integrity.
 
 Refenrential Integrity is achieved by working with primary key and foreign key.
 
 Lab session-3
+-------------
+1. Is SELECT a DML statement? Comment critically.
+ans: 
+No, SELECT is not a DML command. DML stands for Data Manipulation Language. And we can't manipulate data through SELECT command. We need INSERT, UPDATE, DELETE to 
+manipulate data. SELECT is DQL(Data Query Language). We can query the database to retrieve data using SELECT.
+
+2. What will happen if the WHERE clause is not given with DELETE command?
+ans:
+If, the WHERE clause is not given with the DELETE command, then all the records in the table are deleted.
+
+Lab session-4
+-------------
+1. What are aggregate functions? Explain how GROUP BY works?
+ans:
+Aggregate functions: They perform calculation on a column and returns a single value. They ignore null values and are often used with group by clause.
+
+The GROUP BY Statement in SQL is used to arrange identical data into groups with the help of some functions. i.e if a particular column has same values in different 
+rows then it will arrange these rows in a group.
+Syntax:
+SELECT <[COLUMN_LIST]> <FUNCTION_NAME>(<COLUMN_NAME>)
+FROM <TABLE_NAME>
+WHERE <CONDITION>
+GROUP BY <[COLUMN_LIST]>
+HAVING <CONDITION>
+ORDER BY <[COLUMN_LIST]>
+
+2. What is the content of the table DUAL? Why is it required?
+ans:
+Dual table has one column 'DUMMY' defined to be VARCHAR2(1) and contains one row with a value 'X'.
+
+Selecting from the DUAL table is useful for computing a constant expression with the select statement. Because DUAL has only one row and one column, and the constant 
+is returned only once.
+
+Lab session-5
 -------------
