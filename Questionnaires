@@ -102,3 +102,27 @@ Full Outer Join: Returns only unmatched rows from both the table along with the 
 ans:
 Since self join involves the same table being used twice, in order to segregate the reference to each instance of the same table, we need aliasing.
 
+Lab session-6
+-------------
+1. Explain the difference between UNION and UNION ALL?
+ans:
+UNION removes duplicate rows from the result, whereas UNION ALL shows the duplicate rows in the result.
+
+2. Write queries to demonstrate how UNION and INTERSECT obey De Morgan's laws.
+ans:
+(A UNION B)' = A' INTERSECT B'
+(A INTERSECT B)' = A' UNION B'
+
+Lab session-7
+-------------
+1. What is the difference in query processing for ordinary and correlated subqueries?
+ans:
+With an ordinary nested subquery, the inner query runs first and executes once, returning values to be used by the main query. A correlated subquery executes once for
+each candidate row considered by the outer query. So, the inner query is driven by the outer query.
+
+2. How can query no. 17 be executed using join?
+ans:
+select distinct(dname) from dept, emp where dept.dno = emp.deptno;
+
+Lab session-8
+-------------
