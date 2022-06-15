@@ -42,10 +42,10 @@ SELECT ENAME FROM EMP_50 WHERE ENAME LIKE '_i%';
 SELECT COUNT(*) AS Number_of_Managers FROM EMP_50 WHERE JOB = 'Manager'; 
 
 4) 
-SELECT MAX(SAL) AS Maximum, MIN(SAL) AS Minimum, SUM(SAL) AS Total, AVG(SAL) AS Average FROM EMP_50;
+SELECT MAX(SAL) AS "Maximum", MIN(SAL) AS "Minimum", SUM(SAL) AS "Total", AVG(SAL) AS "Average" FROM EMP_50;
 
 5)
-SELECT JOB, MAX(SAL) AS Maximum, MIN(SAL) AS Minimum, SUM(SAL) AS Total, AVG(SAL) AS Average FROM EMP_50 GROUP BY JOB;
+SELECT JOB, MAX(SAL) AS "Maximum", MIN(SAL) AS "Minimum", SUM(SAL) AS "Total", AVG(SAL) AS "Average" FROM EMP_50 GROUP BY JOB;
 
 6)
 SAME AS 3
