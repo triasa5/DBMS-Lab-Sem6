@@ -143,8 +143,34 @@ such as through the following:
 
   - An aggregate function: AVG, COUNT, SUM, MIN, MAX, GROUPING, STDEV, STDEVP, VAR, and VARP.
 
-  - A computation. The column cannot be computed from an expression that uses other columns. Columns that are formed by using the set operators UNION, UNION ALL, CROSSJOIN, EXCEPT, and INTERSECT amount to a computation and are also not updatable.
+  - A computation. The column cannot be computed from an expression that uses other columns. Columns that are formed by using the set operators UNION, UNION ALL, 
+    CROSSJOIN, EXCEPT, and INTERSECT amount to a computation and are also not updatable.
 
 - The columns being modified are not affected by GROUP BY, HAVING, or DISTINCT clauses.
 
 - TOP is not used anywhere in the select_statement of the view together with the WITH CHECK OPTION clause.
+
+Lab session-9
+-------------
+1. Explain the requirements of having stored procedures in databases.
+ans:
+i) Resuability: Multiple users and applications can easily use and reuse stored procedures.
+ii) Modifiable: We can quickly change the statements in a stored procedure, as and when we want to.
+iii) Security: Stored procedures allows us to enhance the security of an application on a database.
+iv) Low network traffic: The server only process the the procedures values instead of whole query.
+
+Lab session-10
+--------------
+1. What is a trigger? When is a trigger fired?
+ans:
+A trigger is a special type of stored procedure that automatically runs when an event occurs in database server.
+
+2. Explain the difference between row level trigger and statement level trigger.
+ans:
+Row level triggers executes once for each and every row in transaction. Statement level triggers only executes once for each single transaction.
+
+3. Explain the difference between before, after and instead triggers.
+ans:
+- Before triggers are fired before insert, update or delete operation.
+- After triggers are fired after insert, update or delete operation.
+- Instead of allows us to override functionality or implement functionality that otherwise isn't supported.
