@@ -1,6 +1,3 @@
---------------
-ASSIGNMENT-4
---------------
 1.
 CREATE TABLE SAILORS(
 s_id NUMBER(4) PRIMARY KEY,
